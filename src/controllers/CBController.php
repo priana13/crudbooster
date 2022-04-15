@@ -707,8 +707,7 @@ class CBController extends Controller
         $where = urldecode($where);
         $columns = request('columns');
         $columns = explode(",", $columns);
-        $paginate=request('paginate');
-        $paginate = urldecode($paginate);
+
         $table = CRUDBooster::parseSqlTable($table)['table'];
         $tablePK = CB::pk($table);
         $result = DB::table($table);
@@ -731,7 +730,7 @@ class CBController extends Controller
 
         $result->orderby($tablePK, 'desc');
 
-        $data['result'] = $result->paginate($paginate?:6);
+        $data['result'] = $result->paginate(6);
         $data['columns'] = $columns;
 
         return view('crudbooster::default.type_components.datamodal.browser', $data);
