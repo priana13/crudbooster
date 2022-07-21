@@ -1,5 +1,5 @@
 {
-    "name": "priana/crudbooster",
+    "name": "crocodicstudio/crudbooster",
     "description": "CRUDBooster Is CRUD Generator Based On Laravel Easy To Make An Advanced Backend",
     "type": "library",
     "license": "MIT",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "priana\\crudbooster\\": "src/"
+          "crocodicstudio\\crudbooster\\": "src/"
         }
       },
     "extra": {
