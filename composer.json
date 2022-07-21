@@ -26,13 +26,13 @@
     },
     "autoload": {
         "psr-4": {
-          "crocodicstudio\\crudbooster\\": "src/"
+          "priana\\crudbooster\\": "src/"
         }
       },
     "extra": {
         "laravel": {
             "providers": [
-                "crocodicstudio\\crudbooster\\CRUDBoosterServiceProvider"
+                "priana\\crudbooster\\CRUDBoosterServiceProvider"
             ]
         }
     }
