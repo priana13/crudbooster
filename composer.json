@@ -20,7 +20,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php":"^8.0.2",
+        "php":"^7.4",
         "doctrine/dbal": "~2.3",
         "intervention/imagecache":"^2.3"
     },
