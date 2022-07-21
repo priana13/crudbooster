@@ -1,5 +1,18 @@
 <?php
-//namespace Database\Seeders; Fix: Target class [CBSeeder] does not exist.
+
+/**
+ * 1. uncomment this namespace:
+ *          namespace Database\Seeders;
+ * 2. Copy This File to database/seeders folder
+ * 3. And call this Seeder from DatabaseSeeder.php by paste this code:
+ *
+ * $this->call([ *
+ *     CBSeeder::class
+ *  ]);
+ *
+ * 4. Install migration and seed with: php artisan migrate:fresh --seed
+ *
+ */
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;

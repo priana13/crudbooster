@@ -45,6 +45,22 @@ $ php artisan crudbooster:install
 - default email : admin@crudbooster.com
 - default password : 123456
 
+## If After install crudbooster not work, try to setup This
+```php
+1. open CBSeeder.php File on vendor/crocodicstudio/crudbooster/src/database/seeders/ and uncomment this namespace:
+         namespace Database\Seeders;
+2. Copy That File to database/seeders folder on laravel root
+3. And call this Seeder from DatabaseSeeder.php by paste this code:
+
+    $this->call([ *
+        CBSeeder::class
+    ]);
+
+4. Install migration and seed with: php artisan migrate:fresh --seed
+
+```
+
+
 ## What's Next
 - [How To Create A Module (CRUD)](./how-to-create-module.md)
 
