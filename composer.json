@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "priana\\crudbooster\\CRUDBoosterServiceProvider"
+                "crocodicstudio\\crudbooster\\CRUDBoosterServiceProvider"
             ]
         }
     }
