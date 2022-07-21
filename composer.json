@@ -20,12 +20,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php":"^7.2",
-        "barryvdh/laravel-dompdf": "0.8.*",
+        "php":"^8.0.2",
         "doctrine/dbal": "~2.3",
-        "maatwebsite/excel": "^3.1",
-        "intervention/imagecache":"^2.3",
-        "laravel/framework": "^6.18|^7.28|^8.34"
+        "intervention/imagecache":"^2.3"
     },
     "autoload": {
         "psr-4": {
