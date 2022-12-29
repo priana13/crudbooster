@@ -32,7 +32,7 @@
     <link rel='stylesheet' href='{{asset("vendor/crudbooster/assets/css/main.css")}}'/>
     <style type="text/css">
         .login-page, .register-page {
-            background: radial-gradient(circle, rgba(137,154,240,1) 0%, rgba(1,6,64,0.742734593837535) 100%);
+            background: radial-gradient(circle, rgba(8,130,180,0.39539565826330536) 0%, rgba(2,56,98,0.8155637254901961) 100%);
             color: {{ CRUDBooster::getSetting("login_font_color")?:'#ffffff' }}  !important;
             background-repeat: no-repeat;
             background-position: center;
@@ -45,8 +45,7 @@
         }
 
         .login-box-body {
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
-            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 0px 50px rgba(026,25 0.9);
             color: {{ CRUDBooster::getSetting("login_font_color")?:'#666666' }}  !important;
         }
 
