@@ -52,7 +52,7 @@ class CrudboosterInstallationCommand extends Command
 
             $process = (app()->version() >= 7.0)
                 ? new Process([$composer.' dumpautoload'])
-                : new Process($composer.' dumpautoload');
+                : new Process([$composer.' dumpautoload']);
 
             $process->setWorkingDirectory(base_path())->run();
 

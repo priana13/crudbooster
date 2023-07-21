@@ -29,11 +29,11 @@
 
     <!-- load css -->
     <style type="text/css">
-        @if($style_css)
+        @if( isset($style_css) )
             {!! $style_css !!}
         @endif
     </style>
-    @if($load_css)
+    @if(isset($load_css))
         @foreach($load_css as $css)
             <link href="{{$css}}" rel="stylesheet" type="text/css"/>
         @endforeach
@@ -86,7 +86,7 @@
 
     @stack('head')
 </head>
-<body class="@php echo (Session::get('theme_color'))?:'skin-blue'; echo ' '; echo config('crudbooster.ADMIN_LAYOUT'); @endphp {{($sidebar_mode)?:''}}">
+<body class="@php echo (Session::get('theme_color'))?:'skin-blue'; echo ' '; echo config('crudbooster.ADMIN_LAYOUT'); @endphp {{(isset($sidebar_mode))?:''}}">
 <div id='app' class="wrapper">
 
     <!-- Header -->
@@ -207,14 +207,14 @@
 @include('crudbooster::admin_template_plugins')
 
 <!-- load js -->
-@if($load_js)
+@if( isset($load_js) )
     @foreach($load_js as $js)
         <script src="{{$js}}"></script>
     @endforeach
 @endif
 <script type="text/javascript">
     var site_url = "{{url('/')}}";
-    @if($script_js)
+    @if(  isset($script_js))
         {!! $script_js !!}
     @endif
 </script>

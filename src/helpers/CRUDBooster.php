@@ -418,28 +418,29 @@ class CRUDBooster
     public static function sidebarDashboard()
     {
 
-        $menu = DB::table('cms_menus')->whereRaw("cms_menus.id IN (select id_cms_menus from cms_menus_privileges where id_cms_privileges = '".self::myPrivilegeId()."')")->where('is_dashboard', 1)->where('is_active', 1)->first();
+        // $menu = DB::table('cms_menus')->whereRaw("cms_menus.id IN (select id_cms_menus from cms_menus_privileges where id_cms_privileges = '".self::myPrivilegeId()."')")->where('is_dashboard', 1)->where('is_active', 1)->first();
+        
 
-        switch ($menu->type) {
-            case 'Route':
-                $url = route($menu->path);
-                break;
-            default:
-            case 'URL':
-                $url = $menu->path;
-                break;
-            case 'Controller & Method':
-                $url = action($menu->path);
-                break;
-            case 'Module':
-            case 'Statistic':
-                $url = self::adminPath($menu->path);
-                break;
-        }
+        // switch ($menu->type) {
+        //     case 'Route':
+        //         $url = route($menu->path);
+        //         break;
+        //     default:
+        //     case 'URL':
+        //         $url = $menu->path;
+        //         break;
+        //     case 'Controller & Method':
+        //         $url = action($menu->path);
+        //         break;
+        //     case 'Module':
+        //     case 'Statistic':
+        //         $url = self::adminPath($menu->path);
+        //         break;
+        // }
 
-        @$menu->url = $url;
+        // @$menu->url = $url;
 
-        return $menu;
+        return 'admin';
     }
 
     public static function sidebarMenu()
