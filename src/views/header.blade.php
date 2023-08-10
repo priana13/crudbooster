@@ -14,6 +14,14 @@
         <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
 
+                @if(config('crudbooster.new_version'))
+
+                <li class="navbar-item">                   
+                    <a class="" href="{{config('crudbooster.new_version_link')}}" target="_blank">{{config('crudbooster.new_version_label')}} <span class="badge bg-warning">New</span></a> 
+                </li>
+
+                @endif
+
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" title='Notifications' aria-expanded="false">
                         <i id='icon_notification' class="fa fa-bell-o"></i>

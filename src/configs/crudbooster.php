@@ -74,4 +74,9 @@ return [
     */
 
     'company_name' => env('COMPANY_NAME', 'Awesome Company'),
+    
+    'new_version' => env('NEW_VERSION', false),
+    'new_version_link' => env('NEW_VERSION_LINK', 'http://example.com/new'),
+    'new_version_label' => env('NEW_VERSION_LABEL', 'New Version'),
+
 ];
