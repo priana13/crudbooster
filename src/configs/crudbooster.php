@@ -72,4 +72,6 @@ return [
     * NOTE :
     * Make sure yo clear your config cache by using command : php artisan config:clear
     */
+
+    'company_name' => env('COMPANY_NAME', 'Awesome Company'),
 ];

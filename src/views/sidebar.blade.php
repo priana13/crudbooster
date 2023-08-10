@@ -14,7 +14,8 @@
             <div class="pull-{{ cbLang('left') }} info">
                 <p>{{ CRUDBooster::myName() }}</p>
                 <!-- Status -->
-                <a href="#"><i class="fa fa-circle text-success"></i> {{ cbLang('online') }}</a>
+                <a href="#">{{ config('crudbooster.company_name') }}</a>                
+                
             </div>
         </div>
 
